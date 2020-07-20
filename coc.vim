@@ -123,7 +123,7 @@ xmap <silent> <C-s> <Plug>(coc-range-select)
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
 
-nmap <leader>ff  :Format<CR>
+nmap <leader>ff  :Format<CR>ggVG=
 
 " Add `:Fold` command to fold current buffer.
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
@@ -135,4 +135,4 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-let g:coc_global_extensions = ["coc-phpls", "coc-html", "coc-fzf-preview", "coc-json", "coc-xml", "coc-tsserver", "coc-vetur", "coc-git"]
+let g:coc_global_extensions = ["coc-phpls", "coc-html", "coc-fzf-preview", "coc-json", "coc-xml", "coc-tsserver", "coc-vetur", "coc-git", "coc-prettier", "coc-css", "coc-actions", "coc-yaml", "coc-pairs", "coc-docker"]
