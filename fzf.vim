@@ -11,7 +11,7 @@ endfunction
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
-nmap <Leader>f :CocCommand fzf-preview.ProjectCommandGrep<CR>
+nmap <Leader>g :CocCommand fzf-preview.ProjectGrep .<CR>
 
 nmap <Leader>o :CocCommand fzf-preview.Buffers<CR>
 
