@@ -1,5 +1,6 @@
-nmap <Leader>l :CocCommand fzf-preview.GitFiles<CR>
-nmap <Leader>p :CocCommand fzf-preview.ProjectFiles<CR>
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+nmap <Leader>l :GFiles<CR>
+nmap <Leader>p :Files<CR>
 
 function! RipgrepFzf(query, fullscreen)
     let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case -- %s || true'
@@ -11,8 +12,7 @@ endfunction
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
-nmap <Leader>g :CocCommand fzf-preview.ProjectGrep .<CR>
+nmap <Leader>g :RG<CR>
 
-nmap <Leader>o :CocCommand fzf-preview.Buffers<CR>
+nmap <Leader>o :Buffers<CR>
 
-nmap <Leader>re :CocCommand fzf-preview.ProjectMruFiles<CR>
