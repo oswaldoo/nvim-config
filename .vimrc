@@ -1,7 +1,7 @@
 set number
-set mouse=a
+"set mouse=a
 set numberwidth=1
-set clipboard=unnamed
+set clipboard=unnamedplus
 syntax enable
 set showcmd
 set ruler
@@ -24,4 +24,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'mhinz/vim-startify'
 call plug#end()
 
-let mapleader=" "
+let mapleader=" " 
+inoremap jj <esc>
+inoremap <c-i> '
+nmap <leader><cr> o<esc>k
