@@ -12,6 +12,9 @@ set relativenumber
 set laststatus=2
 set noshowmode
 set sessionoptions+=globals
+set tabstop=4
+set shiftwidth=0
+set expandtab
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
