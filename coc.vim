@@ -136,3 +136,5 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:coc_global_extensions = ["coc-phpls", "coc-html", "coc-json", "coc-xml", "coc-tsserver", "coc-vetur", "coc-git", "coc-prettier", "coc-css", "coc-actions", "coc-yaml", "coc-pairs", "coc-docker", "coc-tag"]
+
+nmap <leader>gy :CocList symbols<CR>

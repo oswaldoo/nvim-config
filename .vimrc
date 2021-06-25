@@ -25,6 +25,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'Chiel92/vim-autoformat'
 Plug 'mhinz/vim-startify'
+Plug 'juvenn/mustache.vim'
 call plug#end()
 
 let mapleader=" " 

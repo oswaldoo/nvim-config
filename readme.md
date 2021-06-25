@@ -5,6 +5,7 @@
 * Nodejs
 * yarn
 * php
+* ripgrep
 * Instalar plug con el siguiente comando
 ```bash
 curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
